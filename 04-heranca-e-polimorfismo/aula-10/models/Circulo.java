@@ -1,0 +1,25 @@
+package models;
+
+public class Circulo extends FormaGeometrica{
+    
+    private double raio;
+
+    public Circulo(String cor, double raio) {
+        super(cor);
+
+        setRaio(raio);
+    }
+
+    public double getRaio() {
+        return raio;
+    }
+
+    public void setRaio(double raio) {
+        this.raio = raio;
+    }
+
+    @Override 
+    public double calcularArea() {
+        return (3.14f * (Math.pow(raio, 2)));
+    }
+}
